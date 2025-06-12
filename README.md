@@ -6,3 +6,5 @@ I have used NewsAPI.Org to fetch the news and NativeBase.io to build the UI of t
 
 ##Screenshot
 ![News App User Interface](https://www.pradipdebnath.com/wp-content/uploads/2019/08/rn-newsApp-ui.png)
+## Backend
+See `BACKEND_README.md` for instructions on running the moderation backend.
