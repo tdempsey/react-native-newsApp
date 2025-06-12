@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>News Moderation</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>News Moderation Panel</h1>
+  <form method="post" action="/admin/update">
+    <table>
+      <tr><th>Approve</th><th>Rating</th><th>Title</th></tr>
+      <% articles.forEach(function(article){ %>
+      <tr>
+        <td><input type="checkbox" name="approved_<%= article.id %>" <% if(article.approved){ %>checked<% } %>></td>
+        <td>
+          <select name="rating_<%= article.id %>">
+            <% for (var i=0;i<=5;i++){ %>
+              <option value="<%= i %>" <% if(article.rating===i){ %>selected<% } %>><%= i %></option>
+            <% } %>
+          </select>
+        </td>
+        <td><a href="<%= article.url %>" target="_blank"><%= article.title %></a></td>
+      </tr>
+      <% }) %>
+    </table>
+    <button type="submit">Save</button>
+  </form>
+  <p><a href="/refresh">Refresh from API</a></p>
+</body>
+</html>
