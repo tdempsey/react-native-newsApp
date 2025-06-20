@@ -21,3 +21,6 @@ react-native run-ios       # iOS
 
 ## Backend
 See `BACKEND_README.md` for instructions on running the moderation backend.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
