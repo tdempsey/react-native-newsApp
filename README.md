@@ -6,5 +6,18 @@ I have used NewsAPI.Org to fetch the news and NativeBase.io to build the UI of t
 
 ##Screenshot
 ![News App User Interface](https://www.pradipdebnath.com/wp-content/uploads/2019/08/rn-newsApp-ui.png)
+
+## Getting Started
+
+Install dependencies and launch the app using the React Native CLI:
+
+```bash
+npm install
+npm start
+# or, to run directly on a device/emulator
+react-native run-android   # Android
+react-native run-ios       # iOS
+```
+
 ## Backend
 See `BACKEND_README.md` for instructions on running the moderation backend.
